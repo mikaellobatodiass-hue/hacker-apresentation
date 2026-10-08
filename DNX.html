@@ -267,17 +267,18 @@
     font-size:13px; letter-spacing:.1em; text-transform:uppercase; color:var(--gold-soft);
   }
 
-  .qa-list{ display:grid; grid-template-columns:1fr; gap:16px; margin-top:22px; }
+  .qa-list{ display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; margin-top:16px; }
   .qa-item{
     background:linear-gradient(160deg,var(--navy-2),var(--navy-1));
-    border:1px solid var(--line); border-radius:14px; padding:18px 20px;
+    border:1px solid var(--line); border-radius:12px; padding:13px 15px;
   }
   .qa-item strong{
-    display:block; margin-bottom:10px; color:var(--gold-soft); font-family:'Sora',sans-serif;
-    font-size:13px; letter-spacing:.08em; text-transform:uppercase;
+    display:block; margin-bottom:7px; color:var(--gold-soft); font-family:'Sora',sans-serif;
+    font-size:12px; line-height:1.4; letter-spacing:.04em;
   }
-  .qa-item p{ margin:0; font-size:14px; color:#edf2fb; }
-  .qa-item .answer{ margin-top:8px; padding-top:10px; border-top:1px solid var(--line); color:#d8e2f5; }
+  .qa-item p{ margin:0; font-size:12.5px; line-height:1.45; color:#d8e2f5; }
+  .qa-item .answer b{ color:var(--gold-soft); }
+  @media (max-width:720px){ .qa-list{ grid-template-columns:1fr; gap:10px; } }
 </style>
 </head>
 <body>
@@ -529,44 +530,37 @@
       <div class="qa-list">
         <div class="qa-item">
           <strong>1. O que foi o ataque?</strong>
-          <p>Foi um ataque cibernético contra a Telemar, com foco em derrubar serviços de internet da operadora.</p>
-          <p class="answer">Resposta: O caso envolveu um ataque de negação de serviço (DDoS) e uma operação de sobrecarga de infraestrutura, com o objetivo de deixar a rede da Telemar fora do ar, principalmente no Nordeste.</p>
+          <p><b>Resposta:</b> Um ataque de negação de serviço (DDoS) que sobrecarregou a rede da Telemar no Nordeste.</p>
         </div>
 
         <div class="qa-item">
           <strong>2. Quem é o suspeito ou grupo de suspeitos?</strong>
-          <p>O nome central do caso é Daniel Nascimento, conhecido por "DN" e "DNX".</p>
-          <p class="answer">Resposta: O principal suspeito era Daniel Nascimento, um adolescente de 15 anos na época, que chegou a se associar a um grupo de hackers e a uma rede de troca de conhecimento e exploração de vulnerabilidades online.</p>
+          <p><b>Resposta:</b> Daniel Nascimento, conhecido como DN/DNX, tinha 15 anos na época. A apresentação também relata contato com grupos hackers.</p>
         </div>
 
         <div class="qa-item">
           <strong>3. Qual foi o prejuízo?</strong>
-          <p>Os serviços de internet e telecomunicações foram interrompidos por vários dias.</p>
-          <p class="answer">Resposta: Parte da rede da Telemar no Nordeste ficou fora do ar por cerca de uma semana, impactando usuários, empresas e serviços essenciais da região.</p>
+          <p><b>Resposta:</b> Parte da rede da Telemar no Nordeste ficou sem internet por cerca de uma semana. A apresentação não informa um valor financeiro específico para esse ataque.</p>
         </div>
 
         <div class="qa-item">
           <strong>4. Quais foram as consequências?</strong>
-          <p>Houve impacto financeiro, social e institucional enorme para a operadora e para a sociedade.</p>
-          <p class="answer">Resposta: O ataque gerou prejuízos operacionais, repercussão nacional, investigação policial e a prisão de Daniel durante a Operação Ponto Com, além de transformar o caso em referência para crimes cibernéticos no Brasil.</p>
+          <p><b>Resposta:</b> Interrupção dos serviços, investigação da Polícia Federal e prisão de Daniel na Operação Ponto Com.</p>
         </div>
 
         <div class="qa-item">
           <strong>5. Qual vulnerabilidade foi explorada?</strong>
-          <p>Não foi apenas uma falha simples de código — o problema era a fragilidade da infraestrutura e a capacidade de explorar sistemas vulneráveis.</p>
-          <p class="answer">Resposta: A vulnerabilidade central foi a fragilidade da infraestrutura frente a sobrecarga de tráfego e ao uso de computadores infectados ou vulneráveis, somada à exploração de credenciais e acesso indevido em algumas rotinas de rede.</p>
+          <p><b>Resposta:</b> A apresentação não identifica uma falha específica; descreve a sobrecarga do backbone e o uso de um exploit contra computadores vulneráveis.</p>
         </div>
 
         <div class="qa-item">
           <strong>6. Quais técnicas foram utilizadas para realizar o ataque?</strong>
-          <p>Ele usou estratégia de sobrecarga e instrumentos para provocar interrupção da rede.</p>
-          <p class="answer">Resposta: A principal técnica foi o DDoS, que consiste em enviar grande volume de pacotes para saturar a rede. Também houve uso de exploração de sistemas vulneráveis, roubo de credenciais e engenharia social em algumas atividades relacionadas ao caso.</p>
+          <p><b>Resposta:</b> Sobrecarga da rede com pacotes (DDoS) e exploração de computadores vulneráveis.</p>
         </div>
 
         <div class="qa-item">
           <strong>7. Como esse ataque pode ser classificado?</strong>
-          <p>É um crime cibernético de alto impacto, com características de invasão e negação de serviço.</p>
-          <p class="answer">Resposta: O caso pode ser classificado como ataque de negação de serviço (DoS/DDoS), com elementos de invasão de sistemas, fraude digital e uso indevido de credenciais, configurando um crime de segurança da informação com forte repercussão pública.</p>
+          <p><b>Resposta:</b> Como ataque cibernético de negação de serviço distribuída (DDoS), que compromete a disponibilidade dos serviços.</p>
         </div>
       </div>
     </div>
